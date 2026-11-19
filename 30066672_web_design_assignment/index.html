@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>SUITS — The Art of the Deal</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400&family=IBM+Plex+Mono&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <section class="pg on" id="p-home">
+        <div class="hero" id="hero">
+            <div class="sphere"></div>
+            <div class="pc c1 red"><span class="r">9<br>♦</span><span class="s">♦</span><span class="r b">9<br>♦</span></div>
+            <div class="pc c2"><span class="r">3<br>♠</span><span class="s">♠</span><span class="r b">3<br>♠</span></div>
+            <div class="pc c3 red"><span class="r">7<br>♦</span><span class="s">♦</span><span class="r b">7<br>♦</span></div>
+            <div class="pc c4"><span class="r">A<br>♠</span><span class="s">♠</span><span class="r b">A<br>♠</span></div>            
+            <div class="hg">
+                <div>
+                    <div class="mono">Est. New York · 2011</div>
+                    <h1>SUITS</h1>
+                    <h2>Sharp Suits ♦ Scandalous Suits</h2>
+                    <p style="max-width:460px;color:var(--sv)">Open the firm’s digital archive. Choose a season, take a
+                        character’s point of view and relive moments in pixel-art dialogue.</p>
+                    <p><button class="btn" id="enterBtn">Enter the firm</button> &nbsp;<a class="btn g" href="#seasons">Explore
+                            the archives</a></p>
+                </div>
+                <div class="aw">
+                    <div class="tb"><span>Archive status</span><span><i></i><i></i><i></i></span></div>
+                    <div class="bd">
+                        <div class="mono" id="wst"></div>
+                        <div class="fc" id="fc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top">
+            <div class="sec rv" id="people">
+                <div class="mono">Pearson's People</div>
+                <h2>Choose Your Closer</h2>
+                <div class="row" id="hp"></div>
+            </div>
+            <div class="sec rv">
+                <div class="mono">Iconic moments</div>
+                <h2>Playable now</h2>
+                <div class="row" id="hm"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pg top" id="p-seasons">
+        <div class="mono">Archive · Historical records</div>
+        <h2 style="font-size:52px;margin:6px 0 20px">The Firm’s Records</h2>
+        <div class="row" id="sg"></div>
+    </section>
+    <section class="pg top" id="p-characters">
+        <div class="mono">Confidential · Personnel files</div>
+        <h2 style="font-size:52px;margin:6px 0 8px">Lobby</h2>
+        <div class="row" id="cg"></div>
+    </section>
+    <section class="pg top" id="p-scenes">
+        <div class="mono" id="sh"></div>
+        <h2 style="font-size:46px;margin:6px 0 20px">Revisit the moments that defined the firm</h2>
+        <div id="sl" class="row" style="grid-template-columns:1fr"></div>
+    </section>
+    <section class="pg top" id="p-player">
+        <div class="bar mono"><span id="pi"></span><span id="pp"></span></div><br>
+        <div class="stage" id="stage"></div>
+        <div class="dbox" id="db">
+            <div class="pt" id="dp"></div>
+            <div>
+                <div class="nm" id="dn"></div>
+                <div class="tx" id="dt"></div>
+                <div class="cont">CLICK TO CONTINUE ▼</div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="pr"><i id="pb"></i></div><span><button class="btn g" id="bp">Pause</button> <button
+                    class="btn g" id="br">Restart</button><button class="btn g" id="bf">☆ Save</button><a class="btn g" href="#scenes">Scenes</a></span>
+        </div>
+    </section>
+    <section class="pg top" id="p-about">
+        <div class="aw" style="max-width:620px">
+            <div class="tb"><span>About</span><span><i></i><i></i><i></i></span></div>
+            <div class="bd">
+                <p>Unofficial fan-made tribute to <i>Suits</i> (2011–2019). Dialogue is condensed paraphrase. Add scenes
+                    by editing the <code>SC</code> array.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pg top" id="p-saved">
+        <div class="mono">Operations · Favourites</div>
+        <h2 style="font-size:52px;margin:6px 0 20px">Saved Scenes</h2>
+        <div id="fv" class="row" style="grid-template-columns:1fr"></div>
+    </section>
+    <div class="aw sm" id="sm">
+        <div class="tb"><span>Operations</span></div>
+        <a href="#" id="sndBtn">♪ Sound: <b id="sndState">Off</b></a>
+        <a href="#saved">✰ Favorites </a>
+        <a href="#scenes">🗁 Scenes </a>
+        <a href="#" id="rs">⭯ Reset </a>
+    </div>
+    <div class="tk">
+        <div class="orb" id="orb"></div><a class="t" href="#home" data-n="home">Home</a><a class="t" href="#seasons"
+            data-n="seasons">Seasons</a><a class="t" href="#characters" data-n="characters">Characters</a><a class="t"
+            href="#about" data-n="about">About</a><span class="mono" id="clk"></span>
+    </div>
+    <div class="ov" id="ov">
+        <div class="aw">
+            <div class="tb"><span>Suits</span></div>
+            <div class="bd">
+                <h2 id="ot"></h2>
+                <p class="mono" id="oe"></p>
+                <p id="ob"></p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgm" src="assets/audio/theme.mp3" loop preload="none"></audio>
+    <script src="js/data.js"></script>
+    <script src="js/characters.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
